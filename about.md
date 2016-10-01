@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
+title: Обо мне
 permalink: /about/
 ---
 
-Some information about you!
+Страница в разработке...
 
 ### More Information
 
