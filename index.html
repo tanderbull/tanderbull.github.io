@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html lang="ru-Ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Добро пожаловать! by tanderbull</title>
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Добро пожаловать!</h1>
-      <h2 class="project-tagline"></h2>
-    </section>
+---
+layout: default
+---
 
-    <section class="main-content">
-      <h3>
-<a id="Добро-пожаловать-на-мою-страницу-на-гитхабе" class="anchor" href="#" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Добро пожаловать на мою страницу на гитхабе.</h3>
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
 
-<p>Страница находится в стадии разработки.</p>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <footer class="site-footer">
- 
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
 
-
-    </section>
-
-  
-  </body>
-</html>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
